@@ -3,7 +3,7 @@
 
 <div class="code-challenge__result">
     <div class="code-challenge__result-logo">
-        <img src="@Model.DrawLogoUrl" /> 
+        <img src="@Model.DrawLogoSrcLocal" alt="@Model.ProductId" /> 
     </div>
     <div class="code-challenge__result__details">
         <div class="code-challenge__result__details__top">
@@ -14,12 +14,15 @@
                 Draw No. @Html.DisplayFor(modelItem => Model.DrawNumber)
             </div>
             <div class="code-challenge__result__draw-date">
-                Draw No. @Html.DisplayFor(modelItem => Model.DrawDateStr)
+                @Html.DisplayFor(modelItem => Model.DrawDateStr)
             </div>
         </div>
         <div class="code-challenge__result__details__bottom">
+            <div class="code-challenge__result__draw-jackpot-winners">
+                @Html.DisplayFor(modelItem => Model.JackPotWinnersCount) Division 1 @(Model.JackPotWinnersCount==1?"Winner":"Winners"), 
+            </div>
             <div class="code-challenge__result__draw-jackpot">
-                Draw No. @Html.DisplayFor(modelItem => Model.DrawDateStr)
+                @Html.DisplayFor(modelItem => Model.JackPot)
             </div>
         </div>
     </div>

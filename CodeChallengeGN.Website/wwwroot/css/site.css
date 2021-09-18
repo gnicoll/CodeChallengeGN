@@ -41,3 +41,58 @@ body {
         width: 1260px;
     }
 }
+
+
+.code-challenge__title {
+
+}
+.code-challenge__results {
+
+}
+
+.code-challenge__result {
+
+}
+
+.code-challenge__result-logo {
+    height: 4.5rem;
+    width: 4.5rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: white;
+
+}
+    .code-challenge__result-logo img {
+        height: 4rem;
+        width: 4rem;
+        display: block;
+    }
+
+.code-challenge__result__details {
+
+}
+
+.code-challenge__result__details__top {
+
+}
+
+.code-challenge__result__product-id {
+
+}
+.code-challenge__result__draw-number {
+
+}
+.code-challenge__result__draw-date {
+
+}
+.code-challenge__result__details__bottom {
+
+}
+.code-challenge__result__draw-jackpot-winners {
+
+}
+.code-challenge__result__draw-jackpot {
+
+}
