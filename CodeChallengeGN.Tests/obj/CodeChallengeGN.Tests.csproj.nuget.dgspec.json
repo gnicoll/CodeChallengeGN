@@ -1,0 +1,162 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\gnicoll\\code\\CodeChallengeGN\\CodeChallengeGN\\CodeChallengeGN.Tests\\CodeChallengeGN.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\gnicoll\\code\\CodeChallengeGN\\CodeChallengeGN\\CodeChallengeGN.Tests\\CodeChallengeGN.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\gnicoll\\code\\CodeChallengeGN\\CodeChallengeGN\\CodeChallengeGN.Tests\\CodeChallengeGN.Tests.csproj",
+        "projectName": "CodeChallengeGN.Tests",
+        "projectPath": "C:\\gnicoll\\code\\CodeChallengeGN\\CodeChallengeGN\\CodeChallengeGN.Tests\\CodeChallengeGN.Tests.csproj",
+        "packagesPath": "C:\\Users\\nicgl\\.nuget\\packages\\",
+        "outputPath": "C:\\gnicoll\\code\\CodeChallengeGN\\CodeChallengeGN\\CodeChallengeGN.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nicgl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://int-int.racingjd.com:8080/httpAuth/app/nuget/v1/FeedService.svc/": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus-ext.shared.rvdata.com.au/repository/nuget-hosted/": {},
+          "https://nexus.shared.rvdata.com.au/repository/nuget-hosted/": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\gnicoll\\code\\CodeChallengeGN\\CodeChallengeGN\\CodeChallengeGN.Website\\CodeChallengeGN.Website.csproj": {
+                "projectPath": "C:\\gnicoll\\code\\CodeChallengeGN\\CodeChallengeGN\\CodeChallengeGN.Website\\CodeChallengeGN.Website.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.7.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\gnicoll\\code\\CodeChallengeGN\\CodeChallengeGN\\CodeChallengeGN.Website\\CodeChallengeGN.Website.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\gnicoll\\code\\CodeChallengeGN\\CodeChallengeGN\\CodeChallengeGN.Website\\CodeChallengeGN.Website.csproj",
+        "projectName": "CodeChallengeGN.Website",
+        "projectPath": "C:\\gnicoll\\code\\CodeChallengeGN\\CodeChallengeGN\\CodeChallengeGN.Website\\CodeChallengeGN.Website.csproj",
+        "packagesPath": "C:\\Users\\nicgl\\.nuget\\packages\\",
+        "outputPath": "C:\\gnicoll\\code\\CodeChallengeGN\\CodeChallengeGN\\CodeChallengeGN.Website\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nicgl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://int-int.racingjd.com:8080/httpAuth/app/nuget/v1/FeedService.svc/": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus-ext.shared.rvdata.com.au/repository/nuget-hosted/": {},
+          "https://nexus.shared.rvdata.com.au/repository/nuget-hosted/": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
