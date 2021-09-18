@@ -1,0 +1,28 @@
+﻿@model CodeChallengeGN.Website.Models.DrawResultModel
+
+
+<div class="code-challenge__result">
+    <div class="code-challenge__result-logo">
+        <div class="code-challenge__result-">
+
+        </div>
+    </div>
+    <div class="code-challenge__result__details">
+        <div class="code-challenge__result__details__top">
+            <div class="code-challenge__result__product-id">
+                @Html.DisplayFor(modelItem => Model.ProductId)
+            </div>
+            <div class="code-challenge__result__draw-number">
+                Draw No. @Html.DisplayFor(modelItem => Model.DrawNumber)
+            </div>
+            <div class="code-challenge__result__draw-date">
+                Draw No. @Html.DisplayFor(modelItem => Model.DrawDateStr)
+            </div>
+        </div>
+        <div class="code-challenge__result__details__bottom">
+            <div class="code-challenge__result__draw-jackpot">
+                Draw No. @Html.DisplayFor(modelItem => Model.DrawDateStr)
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+﻿@model CodeChallengeGN.Website.Models.LatestResultsModel
+
+
+@{
+    ViewData["Title"] = "Code Challenge Glenn Nicoll";
+}
+
+<div >
+    <div class="code-challenge-title">Code Challenge - Glenn Nicoll</div>
+    <div class="code-challenge-draw-results">
+        @foreach (var result in Model.DrawResults) {
+            @Html.Partial("/Views/Partials/DrawResult.cshtml", result)
+        }
+    </div>
+</div>
