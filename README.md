@@ -11,7 +11,11 @@ Code Challenge submission by Glenn Nicoll.
 
 I found that image URLs from the endpoint would not load. To work around this I have manually setup images in the project and named them to match the DrawResult.ProductId.
 
+Rather than use DrawResult.DrawDisplayName which combines the Brand Name and Draw Number I have opted to use both ProductId and Draw Number. This allowed me to better present the Draw Number, however in the case of SetForLife the brand name is slightly incorrect. 
+
 To demonstrate my skills in C# I have note used any CSS frameworks and the frontend is entirely HTML/CSS (no JS).
+
+
 
 ## Thoughts for next steps
 
