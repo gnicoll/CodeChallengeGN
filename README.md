@@ -5,7 +5,8 @@ Code Challenge submission by Glenn Nicoll.
 ## Instructions:
 
 1. Open The Solution in Visual Studio
-2. Start Debugging (F5)
+2. Build the Solution
+3. Then Start Debugging (F5) to view in browser
 
 ## Notes
 
