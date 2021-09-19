@@ -11,6 +11,8 @@ Code Challenge submission by Glenn Nicoll.
 
 I found that image URLs from the endpoint would not load. To work around this I have manually setup images in the project and named them to match the DrawResult.ProductId.
 
+To demonstrate my skills in C# I have note used any CSS frameworks and the frontend is entirely HTML/CSS (no JS).
+
 ## Thoughts for next steps
 
 ### ReactJS
