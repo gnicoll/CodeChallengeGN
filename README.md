@@ -9,7 +9,7 @@ Code Challenge submission by Glenn Nicoll.
 
 ## Notes
 
-I found that image URLS from the endpoint would not load. To work around this I have manually setup images in the project and named them to match the DrawResult.ProductId.
+I found that image URLs from the endpoint would not load. To work around this I have manually setup images in the project and named them to match the DrawResult.ProductId.
 
 ## Thoughts for next steps
 

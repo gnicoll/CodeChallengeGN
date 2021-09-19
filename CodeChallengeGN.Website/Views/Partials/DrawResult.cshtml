@@ -1,4 +1,5 @@
-﻿@model CodeChallengeGN.Website.Models.DrawResultModel
+﻿@using CodeChallengeGN.Website.Helpers
+@model CodeChallengeGN.Website.Models.DrawResultModel
 
 
 <div class="code-challenge__result">
@@ -16,13 +17,62 @@
             <div class="code-challenge__result__draw-date">
                 @Html.DisplayFor(modelItem => Model.DrawDateStr)
             </div>
+            <div class="code-challenge__result__draw-numbers">
+                @foreach (var primaryNumber in Model.PrimaryNumbers)
+                {
+                    if (primaryNumber < 99)
+                    {
+                        <div class="code-challenge__result__draw-numbers__number code-challenge__result__draw-numbers__number--circle code-challenge__result__draw-numbers__number--circle-primary">
+                            @primaryNumber
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="code-challenge__result__draw-numbers__number code-challenge__result__draw-numbers__number">
+                            @primaryNumber,
+                        </div>
+                    }
+                }
+                @foreach (var secondaryNumber in Model.SecondaryNumbers)
+                {
+                    if (secondaryNumber < 99)
+                    {
+                        <div class="code-challenge__result__draw-numbers__number code-challenge__result__draw-numbers__number--circle code-challenge__result__draw-numbers__number--circle-secondary">
+                            @secondaryNumber
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="code-challenge__result__draw-numbers__number code-challenge__result__draw-numbers__number">
+                            @secondaryNumber,
+                        </div>
+                    }
+                }
+            </div>
         </div>
         <div class="code-challenge__result__details__bottom">
-            <div class="code-challenge__result__draw-jackpot-winners">
-                @Html.DisplayFor(modelItem => Model.JackPotWinnersCount) Division 1 @(Model.JackPotWinnersCount==1?"Winner":"Winners"), 
-            </div>
             <div class="code-challenge__result__draw-jackpot">
-                JackPot: @Html.DisplayFor(modelItem => Model.JackPot)
+                @if (Model.JackPotWinnersCount > 0)
+                {
+                <div class="code-challenge__result__draw-jackpot__value">
+                    @(FormattingHelper.FloatToDollarString(Model.JackPot))
+                </div>
+                }
+                else
+                {
+                    @("JackPot not won")
+                }
+            </div>
+            <div class="code-challenge__result__draw-jackpot-winners">
+                @Html.DisplayFor(modelItem => Model.JackPotWinnersCount) Division 1 @(Model.JackPotWinnersCount==1?"Winner":"Winners"),
+
+                @if (Model.JackPotWinnersCount > 1)
+                {
+                    <div class="code-challenge__result__draw-jackpot-winners__each">
+                        each winning:
+                        @(FormattingHelper.FloatToDollarString(Model.JackPot/ Model.JackPotWinnersCount))
+                    </div>
+                }
             </div>
         </div>
     </div>

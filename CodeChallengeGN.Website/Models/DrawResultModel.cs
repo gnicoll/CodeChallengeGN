@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CodeChallengeGN.Website.Helpers;
 
 namespace CodeChallengeGN.Website.Models
 {
@@ -16,7 +17,7 @@ namespace CodeChallengeGN.Website.Models
         {
             get
             {
-                return DrawDate.ToLongDateString();
+                return DrawDate.ToString("ddd, dd, MMM yyy");
             }
         }
 
@@ -52,21 +53,20 @@ namespace CodeChallengeGN.Website.Models
                 return 0;
             }
         }
-
-        public string JackPot
+        public float JackPot
         {
             get
             {
-                if (Dividends.Any())
+                if (JackPotWinnersCount > 0)
                 {
-                    var firstD = Dividends.First((d)=>d.Division==1);
+                    var firstD = Dividends.First((d) => d.Division == 1);
                     if (firstD != null)
                     {
-                        return "$"+String.Format("{0:n}", firstD.BlocDividend);
+                        return firstD.BlocDividend;
                     }
                 }
 
-                return "-";
+                return 0;
             }
         }
 

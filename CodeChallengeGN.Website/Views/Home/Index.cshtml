@@ -5,10 +5,11 @@
     ViewData["Title"] = "Code Challenge Glenn Nicoll";
 }
 
-<div class="code-challenge-container" >
-    <div class="code-challenge__title">Code Challenge - Glenn Nicoll</div>
+<div class="code-challenge-container">
+    <div class="code-challenge__title">Latest Results</div>
     <div class="code-challenge-draw-results">
-        @foreach (var result in Model.DrawResults) {
+        @foreach (var result in Model.DrawResults)
+        {
             @Html.Partial("/Views/Partials/DrawResult.cshtml", result)
         }
     </div>
