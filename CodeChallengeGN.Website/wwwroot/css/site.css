@@ -168,6 +168,10 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: 600;
+    color: #666666;
+}
+.code-challenge__result__draw-numbers__number--secondary {
+    color: #888888;
 }
 .code-challenge__result__draw-numbers__number--circle {
     font-size: .75rem;
@@ -182,6 +186,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .code-challenge__result__draw-numbers__number--circle-primary {
     background-color: #666666;
 }
